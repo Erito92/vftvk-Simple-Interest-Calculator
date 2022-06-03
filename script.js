@@ -19,6 +19,7 @@ function compute(evento) {
   number = document.getElementById("principal").value;
   if (isNaN(number) || number <= 0) {
     alert("Enter a positve number");
+    document.getElementById("principal").focus();
   } else {
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
